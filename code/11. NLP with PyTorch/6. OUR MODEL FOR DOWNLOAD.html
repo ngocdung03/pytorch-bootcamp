@@ -1,0 +1,11 @@
+<p>I've attached a model to this lecture for Shakespeare. Use this model and code to run it:</p><pre class="prettyprint linenums">model = CharModel(
+    all_chars=all_characters,
+    num_hidden=512,
+    num_layers=3,
+    drop_prob=0.5,
+    use_gpu=True,
+)
+
+model_name = 'example.net'
+model.load_state_dict(torch.load(model_name))
+model.eval()</pre><p><a href="https://support.udemy.com/hc/en-us/articles/229604708-Downloading-Supplemental-Resources" rel="noopener noreferrer" target="_blank">https://support.udemy.com/hc/en-us/articles/229604708-Downloading-Supplemental-Resources</a></p>
